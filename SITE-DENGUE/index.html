@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <link rel='preconnect' href='https://fonts.googleapis.com'>
+  <link href='https://fonts.googleapis.com/css2?family=Inter&display=swap' rel='stylesheet' type='text/css'>
+  <meta charset="UTF-8">
+  <title>Combate à Dengue - Canindé-SE</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>Canindé de São Francisco Contra à Dengue</h1> <img src="img/caninde.png">
+  <div class="menu">
+    <a href="#inicio">A DENGUE</a>
+    <a href="#sintomas">SINTOMAS</a>
+    <a href="#cadastrar">REGISTRAR CASO</a>
+    <a href="#lista">CASOS NOTIFICADOS</a>
+    <a href="#contato">CONTATO</a>
+  </div>
+
+  <div id="inicio" class="card">
+    <h2>Sobre a Dengue</h2>
+
+    <h3>A dengue é uma doença infecciosa, que pode evoluir para formas graves, acometendo pessoas de todas as idades.</h3>
+
+    <p>A dengue faz parte de um grupo de doenças denominadas arboviroses, que se caracterizam por 
+serem causadas por vírus transmitidos por vetores artrópodes. No Brasil, o vetor da dengue 
+é a fêmea do mosquito Aedes aegypti (significa "odioso do Egito"). Os vírus dengue (DENV) estão classificados 
+cientificamente na família Flaviviridae e no gênero Orthoflavivirus. Até o momento são conhecidos quatro sorotipos 
+– DENV-1, DENV-2, DENV-3 e DENV-4 –, que apresentam distintos materiais genéticos (genótipos) e linhagens.</p>
+
+   <p>As evidências apontam que o mosquito tenha vindo nos navios que partiam da África com escravos. No Brasil, 
+a primeira epidemia documentada clínica e laboratorialmente ocorreu em 1981-1982, em Boa Vista (RR), causada pelos sorotipos 1 e 4.
+ Após quatro anos, em 1986, ocorreram epidemias atingindo o estado do Rio de Janeiro e algumas capitais da região Nordeste.
+ Desde então, a dengue vem ocorrendo de forma continuada (endêmica), intercalando-se com a ocorrência de epidemias,
+ geralmente associadas à introdução de novos sorotipos em áreas indenes (sem transmissão) e/ou alteração do sorotipo predominante, acompanhando a expansão do mosquito vetor.</p>
+
+    <p>Aspectos como a urbanização, o crescimento desordenado da população, o saneamento básico deficitário e os
+ fatores climáticos mantêm as condições favoráveis para a presença do vetor, com reflexos na dinâmica de transmissão desses arbovírus.
+ A dengue possui padrão sazonal, com aumento do número de casos e o risco para epidemias, principalmente entre os meses de outubro
+ de um ano a maio do ano seguinte.</p>
+
+    <h2>Ciclo de Vida do Mosquito</h2>
+    <p>O ciclo de vida do Aedes aegypti, do ovo à forma adulta, varia entre 7 e 10 dias. Tudo depende da temperatura, 
+        disponibilidade de alimentos e quantidade de larvas existentes no mesmo criadouro.</p>
+    <h2>Esse ciclo é dividido em quatro fases:</h2>
+    <h3>1. Adulto</h3>
+    <p>A fêmea do mosquito deposita seus ovos nas bordas dos recipientes com água limpa e parada.</p>
+
+    <h3>2. Ovos</h3>
+    <p>Dois a três dias após o contato do ovo com a água, as larvas nascem.</p>
+
+    <h3>3. Larva</h3>
+    <p>Dias depois chegam a fase da pupa. </p>
+
+    <h3>4. PUPA</h3>
+    <p>Dois dias depois se transformam em mosquitos adultos.</p>
+
+    <div class="duas-imagens">
+       <img src="img/ovos.avif">
+       <p class="legenda">Eles podem durar anos e vão eclodir quando entrarem em contato com a água</p>
+       <img src="img/adulto.avif">
+       <p class="legenda">Uma vez adultos, os mosquitos, geralmente, vivem de 4 a 6 semanas</p>
+    </div>
+   
+
+   <div class="prevencao">
+      <h2>Formas de Prevenção</h2>
+      <img src=img/formasdeprevinir.jpg>
+    </div>
+
+
+    <div id="sintomas" class="card">
+        <h2>Sinais e Sintomas</h2>
+        <p>A dengue é uma doença febril aguda, sistêmica, dinâmica, debilitante e autolimitada. A maioria dos doentes se recupera,
+             porém, parte deles podem progredir para formas graves, inclusive virem a óbito. A quase totalidade dos óbitos por dengue é evitável e depende,
+             na maioria das vezes, da qualidade da assistência prestada e organização da rede de serviços de saúde.</p>
+
+        <P>Todo indivíduo que apresentar febre (39°C a 40°C) de início repentino e apresentar pelo menos duas das seguintes manifestações - dor de cabeça, prostração,
+             dores musculares e/ou articulares e dor atrás dos olhos – deve procurar imediatamente um serviço de saúde, a fim de obter tratamento oportuno.</P>
+        
+        <h3>Sinas e Sintomas mais comuns de dengue</h3>
+        <p>Febre alta; Enjoo; Dor nas articulações; Dor de cabeça e/ou atrás dos olhos;
+            Moleza; Manchas vermelhas no corpo.</p>
+            
+        <h3>Sinais e Sintomas de alerta para dengue grave</h3>
+        <p>Dor na barriga intensa;
+           Vômitos frequentes;
+           Tontura ou sensação de desmaio;
+           Dificuldade de respirar;
+           Sangramento no nariz, gengivas e fezes;
+           Cansaço e/ou irritabilidade.</p>
+    
+    </div>
+
+  <div id="cadastrar" class="card">
+    <h2>Registrar Caso de Dengue</h2>
+    <label>Nome do Paciente:</label>
+    <input type="text" id="nome">
+    <label>Endereço:</label>
+    <input type="text" id="endereco">
+    <label>Observações:</label>
+    <textarea id="obs"></textarea>
+    <button onclick="registrarCaso()">Registrar</button>
+  </div>
+
+  <div id="lista" class="card">
+    <h2>Casos Notificados</h2>
+    <div id="casos"></div>
+  </div>
+
+  <section id="contato">
+    <h2>Contato</h2>
+    <p>Secretaria de Saúde Canindé-SE | Tel: (79) XXXX-XXXX</p>
+  </section>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+
